@@ -1,0 +1,12 @@
+  - url: img/slide.jpg
+    alt: 滑动块1
+    title: slide1
+  - url: img/slide2.jpg
+    alt: slide2
+    title: slide2
+  - url: img/slide3.jpg
+    alt: slide3
+    title: slide3
+  - url: img/slide.jpg
+    alt: slide4
+    title: slide4

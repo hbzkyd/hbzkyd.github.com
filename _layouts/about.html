@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--[if IE 7 ]>    <html class= "ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class= "ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class= "ie9"> <![endif]-->
+<!--[if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<head>
+
+    {% include head.html %}
+
+</head>
+
+<body>
+
+    {% include top.html param="about" %}
+
+<!-- Start of slider wrapper -->
+<div id="slider_wrapper">
+
+	<!-- Start of breadcrumb wrapper -->
+    <div id="breadcrumb_wrapper">
+
+        <h1>about</h1>
+        
+            <!-- Start of breadcrumb -->
+            <div id="breadcrumb">
+        
+                <!-- Start of breadcrumb ul -->
+                <ul>
+        
+                    <li><a href="{{ site.url }}">首页</a></li>
+                    <li>&#8250;&nbsp;关于我们</li>
+        
+                </ul><!-- End of breadcrumb ul -->
+        
+            </div><!-- End of breadcrumb -->
+            
+	</div><!-- End of breadcrumb wrapper -->
+
+</div><!-- End of slider wrapper -->
+
+<!-- Start of wrapper -->
+<div id="wrapper">
+
+	<!-- Start of full width -->
+    <div class="full_width">
+               
+        <h2>{{ page.atitle1 }}</h2>   
+                 
+        <!-- Start of quote -->
+        <div class="quote">
+          {{ page.aquote }} 
+        <div class="clear"></div>
+                
+        </div><!-- End of quote -->
+        <hr /> 
+        
+        <h5></h5>
+        
+        <img class="alignleft" src="{{ page.aimgurl }}" width="305" height="227" alt="left aligned" />
+        <p>{{ page.acontent }}</p>
+           
+        <hr />
+           
+    </div><!-- End of full width -->
+
+</div><!-- End of wrapper -->
+
+<div class="clear"></div>
+
+  {% include footer.html %}
+
+</body>
+</html>

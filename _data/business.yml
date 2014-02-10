@@ -1,0 +1,13 @@
+  - imgSrc: img/business1.jpg
+    imgAlt: business1
+    imgTitle: business1
+    maskTitle: Business Title 1
+    maskDetail: Some text here if you want
+    maskUrl: business_single.html
+
+  - imgSrc: img/business2.jpg
+    imgAlt: business2
+    imgTitle: business2
+    maskTitle: 业务标题 2
+    maskDetail: 业务描述
+    maskUrl: business_single.html

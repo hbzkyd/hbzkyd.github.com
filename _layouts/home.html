@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--[if IE 7 ]>    <html class= "ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class= "ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class= "ie9"> <![endif]-->
+<!--[if lt IE 9]>
+<![endif]-->
+
+<head>
+
+  {% include head.html %}
+
+<!-- *************************************************************************
+*********************   THIS IS THE SLIDER JS    **************************
+************************************************************************** -->
+<script type="text/javascript">
+$(window).load(function() {
+			$('#slider').flexslider();
+		});
+		
+</script>
+</head>
+
+<body>
+  {% include top.html param="home" %}
+
+<div id="slider_wrapper2">
+
+	<!-- Start of slider -->
+    <div id="slider">
+    
+        <ul class="slides">
+            {% for info in site.data.homeSlide %}
+              <li>
+                <img src="{{ info.url }}" alt="{{ info.alt }}" title="{{ info.title }}">
+              </li>
+            {% endfor %}
+        </ul>
+        
+    </div><!-- End of slider -->
+
+</div><!-- End of slider wrapper -->
+
+<!-- Start of slider caption wrapper -->
+<div id="slider_caption_wrapper">
+
+    <!-- Start of slider caption -->
+    <div id="slider_caption">
+        <p>{{ page.lessInfo }}</p>
+    
+        <!-- Start of slider link -->
+        <div id="slider_link">
+        
+            <a href="{{ site.url }}/about.html">更多信息</a>
+            
+        </div><!-- End of slider link -->
+    
+    </div><!-- End of slider caption -->
+
+</div><!-- End of slider caption wrapper -->
+
+<!-- Start of wrapper -->
+<div id="wrapper">
+    
+    <!-- Start of recent post wrapper -->
+    <div id="recent_post_wrapper">
+    
+        <h2>{{ page.title1 }}</h2>
+    
+        <!-- Start of one third first -->
+        <div class="one_third_first">
+        
+            <!-- Start of featured image portfolio -->
+            <div class="featured_image_portfolio">
+            
+                <a href="{{ page.purl1 }}"><img src="{{ page.piurl1 }}" alt="{{ page.pialt1 }}" title="{{ page.pititle1 }}" /></a>
+            
+            </div><!-- End of featured image portfolio -->
+            
+            <!-- Start of featured content portfolio -->
+            <div class="featured_content_portfolio">
+            
+                <h5><a href="{{ page.purl1 }}">{{ page.ptitle1 }}</a></h5>
+            
+                <p>{{ page.pcontent1 }}</p>
+            
+                <div class="blog_readmore"><a href="{{ page.purl1 }}">了解更多</a></div>
+            
+            </div><!-- End of featured content portfolio -->
+        
+        </div><!-- End of one third first -->
+        
+        <!-- Start of one third -->
+        <div class="one_third">
+        
+            <!-- Start of featured image portfolio -->
+            <div class="featured_image_portfolio">
+            
+                <a href="{{ page.purl2 }}"><img src="{{ page.piurl2}}" alt="{{ page.pialt2 }}" title="{{ page.pititle2 }}" /></a>
+            
+            </div><!-- End of featured image portfolio -->
+            
+            <!-- Start of featured content portfolio -->
+            <div class="featured_content_portfolio">
+            
+                <h5><a href="{{ page.purl2 }}">{{ page.ptitle2 }}</a></h5>
+            
+                <p>{{ page.pcontent2 }}</p>
+            
+                <div class="blog_readmore"><a href="{{page.purl2 }}">了解更多</a></div>
+            
+            </div><!-- End of featured content portfolio -->
+        
+        </div><!-- End of one third -->
+        
+        <!-- Start of one third -->
+        <div class="one_third">
+        
+            <!-- Start of featured image portfolio -->
+            <div class="featured_image_portfolio">
+            
+                <a href="{{ page.purl3 }}"><img src="{{ page.piurl3 }}" alt="{{ page.pialt3 }}" title="{{ page.pititle3 }}" /></a>
+            
+            </div><!-- End of featured image portfolio -->
+            
+            <!-- Start of featured content portfolio -->
+            <div class="featured_content_portfolio">
+            
+                <h5><a href="{{ page.purl3 }}">{{ page.ptitle3 }}</a></h5>
+            
+                <p>{{ page.pcontent3 }}</p>
+            
+                <div class="blog_readmore"><a href="{{ page.purl3 }}">了解更多</a></div>
+            
+            </div><!-- End of featured content portfolio -->
+        
+        </div><!-- End of one third -->
+    
+    </div><!-- End of recent post wrapper -->
+
+    <div class="clear"></div>
+
+    <!-- Start of client wrapper -->
+    <div id="client_wrapper">
+    
+    <img src="img/divider.png" alt="divider" width="960" height="30" style="padding:20px 0 20px 0;"/>
+        
+            <!-- Start of one fourth first -->
+            <div class="one_fourth_first">
+            
+            <span class="dropcap_yellow">1</span>
+            
+            <h5><a href="{{ page.turl1 }}">{{ page.ttitle1 }}</a></h5>
+            
+            <p>{{ page.tcontent1 }}</p>
+                
+            </div><!-- End of one fourth first -->
+        
+            <!-- Start of one fourth -->
+            <div class="one_fourth">
+            
+            <span class="dropcap_black">2</span>
+            
+            <h5><a href="{{ page.turl2 }}">{{ page.ttitle2 }}</a></h5>
+            
+            <p>{{ page.tcontent2 }}</p>
+                
+            </div><!-- End of one fourth -->
+            
+            <!-- Start of one fourth -->
+            <div class="one_fourth">
+            
+            <span class="dropcap_yellow">3</span>
+            
+            <h5><a href="{{ page.turl3 }}">{{ page.ttitle3 }}</a></h5>
+                
+            <p>{{ page.tcontent3 }}</p>
+                
+            </div><!-- End of one fourth -->
+        
+            <!-- Start of one fourth -->
+            <div class="one_fourth">
+            
+            <span class="dropcap_black">4</span>
+            
+            <h5><a href="{{ page.turl4 }}">{{ page.ttitle4 }}</a></h5>
+                
+            <p>{{ page.tcontent4 }}</p>
+                
+            </div><!-- End of one fourthn -->
+            
+            <img src="img/divider.png" alt="divider2" width="960" height="30" style="padding:20px 0 20px 0;"/>           
+    
+    </div><!-- End of client wrapper -->
+    
+
+</div><!-- End of wrapper -->
+
+<div class="clear"></div>
+
+  {% include footer.html %}
+
+</body>
+</html>

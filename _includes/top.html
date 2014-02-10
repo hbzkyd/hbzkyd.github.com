@@ -1,0 +1,99 @@
+<!-- Start of toggleMe -->
+<div id="toggleMe" style="display:none; overflow:hidden; height:40px;">
+
+    <!-- Start of header \-->
+    <div id="header">
+    
+    <p>欢迎；通知；各种暂时信息</p>
+            
+    </div><!-- End of header -->
+
+</div><!-- End of toggleMe -->
+
+<!-- This is the button that opens and closes the toggle box at the top of the page -->
+<a href="javascript:;" onmousedown="toggleSlide('toggleMe');" class="tog"><img src="img/close_tab.png" height="36" width="39" alt="toggle me" /></a>
+
+<!-- Start of social bar wrapper -->
+<div id="social_bar_wrapper">
+    
+    <!-- Start of social_bar -->
+    <div id="social_bar">
+    
+        <ul id="social">
+  <li class="trigger"></li>
+  <!-- Start of google -->
+  
+  <li class="google"> <a href="http://google.com" target="_blank"><img src="img/google1.png" width="30" height="30" alt="google" /></a> </li>
+  <!-- Start of facebook -->
+  
+  <li class="facebook"> <a href="http://facebook.com" target="_blank"><img src="img/facebook1.png" width="30" height="30" alt="facebook" /></a> </li>
+  <!-- Start of twitter -->
+  
+  <li class="twitter"> <a href="http://twitter.com" target="_blank"><img src="img/twitter1.png" width="30" height="30" alt="twitter" /></a> </li>
+  <!-- Start of linkedin -->
+  
+  <li class="linkedin"> <a href="http://linkedin.com" target="_blank"><img src="img/linkedin1.png" width="30" height="30" alt="linkedin" /></a> </li>
+  <!-- Start of dribbble -->
+  
+  <li class="dribbble"> <a href="http://dribbble.com" target="_blank"><img src="img/dribbble1.png" width="30" height="30" alt="dribbble" /></a> </li>
+</ul>
+        
+        <!-- Start of search -->
+		<ul id="search">
+  			<li class="searchtrigger">
+            
+            <form>
+            	<input type="text" value="Search" id="" name="s" onblur="if(this.value == '') { this.value = 'Search'; }" onfocus="if(this.value == 'Search') { this.value = ''; }" class="" />
+            </form>
+            
+            </li>
+        </ul><!-- End of search -->
+        
+    </div><!-- End of social bar -->
+
+</div><!-- End of social bar wrapper -->
+
+<!-- Start of menu wrapper -->
+<div id="menu_wrapper">
+
+	<!-- Start of logo menu wrapper -->
+    <div id="logo_menu_wrapper">
+    
+        <!-- Start of top logo -->
+        <div id="top_logo">
+        
+            <a href="{{site.url}}"><img src="img/logo.png" height="40" width="247" alt="top logo" /></a>
+        
+        </div><!-- End of top logo -->
+        
+		<!-- Start of top menu -->
+        <div id="top_menu">
+        
+            <ul class="sf-menu">
+            
+                <li><a {% if include.param == "home" %}class="active" {% endif %} href="{{ site.url }}">Home<span>首页</span></a></li>
+
+                <li><a {% if include.param == "about" %}class="active" {% endif %} href="{{ site.url }}/about.html">About<span>关于我们</span></a></li>
+
+                <li><a {% if include.param == "business" %}class="active" {% endif %} href="{{ site.url }}/business.html">Business <span>核心业务</span></a></li>
+                
+                <!-- <li><a href="blog.html">Blog <span>I love blogging</span></a> 
+                
+                	<ul>
+                    	<li><a href="fullwidth.html">Full Width</a></li>
+                    	<li><a href="left-sidebar.html">Left Sidebar</a></li>
+                    </ul> 
+                    
+                    </li> -->
+                
+                    <li><a {% if include.param == "contact" %}class="active" {% endif %} href="{{ site.url }}/contact.html">Contact<span>联系我们</span></a></li>
+            
+            </ul>
+
+		</div><!-- End of top menu --> 
+        
+        <div class="clear"></div>        
+    
+    </div><!-- End of logo menu wrapper -->
+
+</div><!-- End of menu wrapper -->

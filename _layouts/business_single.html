@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--[if IE 7 ]>    <html class= "ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class= "ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class= "ie9"> <![endif]-->
+<!--[if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<head>
+
+    {% include head.html %}
+
+</head>
+
+<body>
+
+    {% include top.html param="business" %}
+
+<!-- Start of slider wrapper -->
+<div id="slider_wrapper">
+
+	<!-- Start of breadcrumb wrapper -->
+    <div id="breadcrumb_wrapper">
+
+        <h1>Project One</h1>
+        
+            <!-- Start of breadcrumb -->
+            <div id="breadcrumb">
+        
+                <!-- Start of breadcrumb ul -->
+                <ul>
+        
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li>&#8250;&nbsp; Project One</li>
+        
+                </ul><!-- End of breadcrumb ul -->
+        
+            </div><!-- End of breadcrumb -->
+            
+	</div><!-- End of breadcrumb wrapper -->
+
+</div><!-- End of slider wrapper -->
+
+<!-- Start of wrapper -->
+<div id="wrapper">
+
+	<!-- Start of portfolio left content wrapper -->
+    <div class="portfolio_left_content_wrapper">
+    
+    <img src="img/portfolio_featured_image.jpg" alt="featured image" />
+        
+    </div><!-- End of portfolio left content wrapper -->
+        
+    <!-- Start of portfolio right content wrapper -->
+    <div class="portfolio_right_content_wrapper">
+    
+    <div class="orange_line"></div>
+    
+    	<!-- Start of portfolio details client -->
+        <div class="portfolio_details_client">
+        
+        <span class="portfolio_details">CLIENT:</span> 
+        <p>Unknown LLC</p>
+        
+        </div><!-- End of portfolio details client -->
+    
+    	<!-- Start of portfolio details skills -->
+        <div class="portfolio_details_skills">
+        
+        <span class="portfolio_details">SKILLS USED: </span> 
+        <p>Photoshop, Dreamweaver</p>
+        
+        </div><!-- End of portfolio details skills -->
+        
+    	<!-- Start of portfolio details info -->
+        <div class="portfolio_details_info">
+        
+        <span class="portfolio_details">PROJECT URL: </span>
+        <p><a href="#">Link</a></p>
+        
+        <div class="orange_line"></div>
+        
+        </div><!-- End of portfolio details info -->        
+    
+    </div><!-- End of portfolio right content wrapper -->
+
+	<div class="clear"></div>
+    
+    <!-- Start of full width -->
+    <div class="full_width2">
+        
+        
+        <p>Nulla consequat massa quis enim. <span class="highlight">Donec pede justo</span>, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, <a href="#">venenatis vitae,</a> justo. Vivamus vestibulum magna et eros interdum ut ullamcorper purus lobortis. Vestibulum non augue quis sem pulvinar ornare. Vestibulum ornare eros in urna suscipit ullamcorper.</p>
+        
+        <hr />
+        
+        <div class="one_half_first">
+            <h5>we design.</h5>
+            <p><span class="dropcap_yellow">1</span>Vivamus vestibulum magna et eros interdum ut ullamcorper purus lobortis. Vestibulum non augue quis sem pulvinar ornare. Vestibulum ornare eros in urna suscipit ullamcorper. <span class="highlight">Suspendisse a augue at nulla vestibulum</span> imperdiet. Praesent vel metus felis.</p>
+            
+            <p>Nullam adipiscing tincidunt arcu ornare sagittis. Mauris dolor nisi, ultricies at tempor quis, condimentum eget mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula ante pulvinar massa aliquam vulputate. Duis gravida porttitor nibh eu ullamcorper. Donec at mollis tellus. Praesent viverra tortor ac <a href="#">ipsum rhoncus eget tincidunt</a> tortor pellentesque. Proin id ipsum id est placerat mattis vel ut neque.</p>
+        </div>
+        
+        <div class="one_half">
+        <h5>you buy.</h5>
+        <p><span class="dropcap_black">2</span>Vivamus vestibulum magna et eros interdum ut ullamcorper purus lobortis. Vestibulum non augue quis sem pulvinar ornare. Vestibulum ornare eros in urna suscipit ullamcorper. Suspendisse a augue at nulla vestibulum imperdiet. Praesent vel metus felis.</p>
+            
+            <p>Nullam adipiscing tincidunt arcu ornare sagittis. Mauris dolor nisi, ultricies at tempor quis, condimentum eget mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula ante pulvinar massa aliquam vulputate. Duis gravida porttitor nibh eu ullamcorper. <span class="highlight">Donec at mollis</span> tellus. Praesent viverra tortor ac <a href="#">ipsum rhoncus eget tincidunt</a> tortor pellentesque. Proin id ipsum id est placerat mattis vel ut neque.</p>
+        </div>
+        
+        <hr />
+
+    
+    <span class="portfolio_details">SCREENSHOTS</span>
+    
+    <div class="clearbig"></div>
+        
+    <a href="img/placeholder_img.jpg" rel="prettyPhoto[portfolio]"><img class="gallery_image" src="img/portfolio7.jpg" alt="Gallery 1" /></a>
+    <a href="img/placeholder_img.jpg" rel="prettyPhoto[portfolio]"><img class="gallery_image" src="img/portfolio8.jpg" alt="Gallery 1" /></a>
+    <a href="img/placeholder_img.jpg" rel="prettyPhoto[portfolio]"><img class="gallery_image_last" src="img/portfolio9.jpg" alt="Gallery 1" /></a>
+    
+    </div><!-- End of full width -->
+        
+</div><!-- End of wrapper -->
+
+<div class="clear"></div>
+
+<!-- Start of footer wrapper -->
+  {% include footer.html %}
+
+<!-- PRETTYPHOTO CODE -->
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){
+$("a[rel^='prettyPhoto']").prettyPhoto({
+									   theme:'light_rounded',
+									   showTitle: true});
+});
+</script>
+
+
+</body>
+</html>
